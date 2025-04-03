@@ -1,0 +1,42 @@
+html {
+  background-color: rgb(40, 39, 39);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(40, 39, 39);
+  color: rgb(188, 187, 187);
+  font-weight: bolder;
+  font-size: x-large;
+}
+.logo{
+    display: flex;
+    flex: 10;
+}
+.nav .nav-icon{
+    display: flex;
+    flex: 2;
+  justify-content: space-evenly;
+ }
+
+.banner img{
+      width: 200px;
+      flex: 6;
+    } 
+.banner p{
+    color: rgb(188, 187, 187);
+
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 300px;
+    background-color:rgb(40, 39, 39);
+    position: relative;
+    z-index: -10;
+    align-items: center;
+}
+.buy-sec{
+    position: relative;
+}
