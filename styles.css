@@ -1,42 +1,123 @@
+/* page background */
 html {
   background-color: rgb(20, 20, 20);
-}
-
-body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+}
+body {
+  overflow-x: hidden;
 }
 
-/* nav bar style */
+/* nav bar */
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: rgb(20, 20, 20);
   color: rgb(167, 166, 166);
   font-weight: bolder;
   font-size: x-large;
   padding: 15px 10px;
+  position: relative;
+  z-index: 2;
+}
+.btn-1 {
+  background: rgb(45, 45, 45);
+  color: rgb(159, 159, 159);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.btn-2 {
+  background: rgb(98, 98, 98);
+  color: rgb(160, 160, 160);
+  padding: 10px 20px;
+  border: 1px solid rgb(209, 208, 208);
+  margin: 0 3px 5px 3px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .logo {
-  display: flex;
   flex: 10;
   font-size: larger;
+  position: relative;
+  top: -6px;
 }
 
-.nav .nav-icon {
+.nav-icon {
   display: flex;
+  gap: 20px;
+  align-items: center;
   flex: 2;
   justify-content: space-evenly;
 }
 
+/* wrapper for hover-triggered items */
+.drop-down {
+  position: relative;
+  cursor: context-menu;
+  z-index: 7;
+}
+
+/* hide by default */
+.searchText {
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.25s ease-out, opacity 0.2s ease-out;
+  position: absolute;
+  top: 40px; /* drop down */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  border: 1px solid white;
+}
+
+/* show on hover */
+.drop-down:hover .searchText {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.login {
+  background-color: rgb(45, 45, 45);
+  padding: 12px;
+  font-size: small;
+  color: rgb(205, 205, 205);
+}
+.drop-down:hover .searchText-1 {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.searchText-1 {
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.25s ease-in, opacity 0.2s ease-out;
+  position: absolute;
+  top: 40px; /* drop down */
+  left: 103%;
+  transform: translateX(-100%);
+  white-space: nowrap;
+  border: 1px solid white;
+}
+.drop-down {
+  height: 40px;
+}
+
 /* Banner styles */
 
+.line-through {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
 #slider {
   width: 100%;
   overflow: hidden;
   position: relative;
   white-space: nowrap;
+  top: -52px;
 }
 
 #slider .banner-container {
@@ -125,11 +206,9 @@ body {
 }
 
 .price {
-  position: relative;
-  left: -67px;
-  top: -25px;
   display: flex;
-  justify-content: space-evenly;
+  top: -25px;
+  gap: 20px;
   font-size: 20px;
 }
 
@@ -140,16 +219,16 @@ body {
   font-weight: 100;
 }
 
-.btn {
+.btn-3 {
   background-color: rgb(233, 0, 0);
   border: none;
   padding: 10px 20px;
   color: azure;
   border-radius: 5px;
   position: relative;
-  bottom: 22px;
   font-size: medium;
   left: 3px;
+  cursor: pointer;
 }
 
 .banner-2 p {
@@ -262,7 +341,7 @@ body {
   text-align: center;
   font-weight: bolder;
   font-size: 35px;
-  margin: 90px;
+  margin: 30px 0 70px 0;
   padding: 20px;
 }
 .featured-product div {
@@ -274,6 +353,36 @@ body {
   align-items: center;
   justify-items: center;
   font-family: sans-serif;
+}
+.heading-1 {
+  text-align: center;
+  font-size: x-small;
+  opacity: 0.7;
+  font-weight: bold;
+}
+.heading-2 {
+  text-align: center;
+  font-size: normal;
+  opacity: 0.8;
+  font-weight: bold;
+}
+.heading-3 {
+  text-align: center;
+  font-size: x-large;
+  opacity: 0.9;
+  font-weight: bold;
+}
+.heading-4 {
+  text-align: center;
+  font-size: normal;
+  opacity: 0.7;
+  font-weight: bold;
+}
+.heading-5 {
+  text-align: center;
+  font-size: x-small;
+  opacity: 0.6;
+  font-weight: bold;
 }
 
 .pro-1 img {
@@ -357,6 +466,13 @@ body {
   font-size: smaller;
 }
 
+#radio-1 {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 0 0;
+  accent-color: red;
+}
+
 /* top-product styles */
 
 .top-container h2 {
@@ -371,17 +487,20 @@ body {
 }
 .top-container .head-list {
   display: flex;
-  width: 75%;
+  width: 65%;
   justify-content: space-around;
   font-family: sans-serif;
   padding: 0 0 40px 0;
-  font-size: large;
+  font-size: 20px;
+}
+.top-container .head-list p {
+  padding: 8px 20px;
 }
 .top-container .head-list p:hover {
   background-color: red;
   color: aliceblue;
   padding: 8px 20px;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
 }
 .top-product {
@@ -390,35 +509,55 @@ body {
 }
 
 .product-list img {
-  height: 175px;
+  height: 179px;
   display: flex;
-  padding: 15px 50px;
+  padding: 15px 59px;
   background-color: rgb(29, 29, 29);
+  border-radius: 3px;
 }
 
 .product-list {
   border: 1px solid gray;
   margin: 5px;
-  border-radius: 2px;
+  border-radius: 3px;
+}
+.top-heading {
+  font-size: x-large;
 }
 .top-btn {
-  background-color: rgb(233, 0, 0);
-  justify-items: center;
-  justify-content: center;
+  background-color: rgb(248, 2, 2);
   border: none;
-  padding: 5px 25px;
   color: azure;
-  margin: 0 5px 5px 5px;
+  margin: 0 10px 15px 10px;
   border-radius: 3px;
-  font-size: smaller;
-  padding: 5px 25px;
+  font-size: 15px;
+  padding: 6px 101px;
+  cursor: pointer;
+}
+.top-rating {
+  color: rgb(239, 17, 17);
 }
 .pro-prices {
   font-family: "Lilita One", sans-serif;
   display: flex;
+  font-size: large;
+  gap: 15px;
 }
 .discription {
   padding: 0 15px;
+  font-family: "Lilita One", sans-serif;
+}
+.hr-1 {
+  display: flex;
+  width: auto;
+  opacity: 0.5;
+}
+.browse-all {
+  position: relative;
+  top: 165px;
+  right: -82px;
+  font-size: x-large;
+  cursor: pointer;
 }
 
 /* advantage section styles */
@@ -458,6 +597,24 @@ body {
   grid-template-columns: 2fr 1fr 1fr 1fr;
   background-color: black;
   height: 400px;
+  
+}
+.email{
+  height: 40px;
+  width: 260px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border: 1px solid gray;
+  color: white;
+  font-size: large;
+  padding: 0 10px;
+  position: relative; top: 5px;
+}
+
+.footer-font{
+  font-family: "Lilita One", sans-serif;
+  font-size: large;
 }
 .footer ul {
   list-style: none;
@@ -479,11 +636,11 @@ body {
   color: rgb(167, 166, 166);
   padding: 30px;
 }
-.footer-info .info-icon{
+.footer-info .info-icon {
   display: flex;
   flex: 2;
- justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-.footer-info .text{
+.footer-info .text {
   flex: 10;
 }
