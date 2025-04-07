@@ -30,15 +30,21 @@ body {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  border: none;
+  border: 1px solid white;
+  border-radius: 3px;
 }
 .btn-2 {
   background: rgb(98, 98, 98);
   color: rgb(160, 160, 160);
   padding: 10px 20px;
-  border: 1px solid rgb(209, 208, 208);
   margin: 0 3px 5px 3px;
   font-weight: bold;
   cursor: pointer;
+  border: none;
+  border: 1px solid rgb(209, 208, 208);
+  
+  
 }
 
 .logo {
@@ -73,7 +79,9 @@ body {
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-  border: 1px solid white;
+  border: none;
+  
+  
 }
 
 /* show on hover */
@@ -87,6 +95,7 @@ body {
   padding: 12px;
   font-size: small;
   color: rgb(205, 205, 205);
+  border-radius: 3px;
 }
 .drop-down:hover .searchText-1 {
   opacity: 1;
@@ -99,96 +108,16 @@ body {
   transition: transform 0.25s ease-in, opacity 0.2s ease-out;
   position: absolute;
   top: 40px; /* drop down */
-  left: 103%;
+  left: 115%;
   transform: translateX(-100%);
   white-space: nowrap;
+  border: none;
   border: 1px solid white;
+  border-radius: 3px;
+  
 }
 .drop-down {
   height: 40px;
-}
-
-
-/* product discription */
-.pro-description {
-  display: flex;
-}
-.pro-description .side-img img {
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgb(205, 205, 205);
-  margin: 40px;
-}
-.pro-description .main-img img {
-  height: 600px;
-}
-.pro-description .third {
-  font-family: "Lilita One", sans-serif;
-  color: rgb(165, 165, 165);
-}
-
-/* top-product styles */
-
-.top-container h2 {
-  font-size: xx-large;
-  padding: 150px 0 40px 0;
-}
-.top-container {
-  color: rgb(167, 166, 166);
-  width: 100%;
-  justify-items: center;
-  font-family: sans-serif;
-}
-
-.top-product {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.product-list img {
-  height: 179px;
-  display: flex;
-  padding: 15px 59px;
-  background-color: rgb(29, 29, 29);
-  border-radius: 3px;
-}
-
-.product-list {
-  border: 1px solid gray;
-  margin: 5px;
-  border-radius: 3px;
-}
-.top-heading {
-  font-size: x-large;
-}
-.top-btn {
-  background-color: rgb(248, 2, 2);
-  border: none;
-  color: azure;
-  margin: 0 10px 15px 10px;
-  border-radius: 3px;
-  font-size: 15px;
-  padding: 6px 101px;
-  cursor: pointer;
-}
-.top-rating {
-  color: rgb(239, 17, 17);
-}
-.pro-prices {
-  font-family: "Lilita One", sans-serif;
-  display: flex;
-  font-size: large;
-  gap: 15px;
-}
-.discription {
-  padding: 0 15px;
-  font-family: "Lilita One", sans-serif;
-}
-.hr-1 {
-  display: flex;
-  width: auto;
-  opacity: 0.5;
 }
 
 /* footer styles */
@@ -198,7 +127,6 @@ body {
   grid-template-columns: 2fr 1fr 1fr 1fr;
   background-color: black;
   height: 400px;
-  width: 100%;
 }
 .email {
   height: 40px;
@@ -231,7 +159,6 @@ body {
   background-color: black;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 .info {
   display: flex;
@@ -247,4 +174,3 @@ body {
 .footer-info .text {
   flex: 10;
 }
-
