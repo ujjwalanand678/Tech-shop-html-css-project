@@ -1,0 +1,94 @@
+/* page background */
+html {
+  background-color: rgb(20, 20, 20);
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(167, 166, 166);
+}
+
+.sign-up-1 {
+  justify-items: center;
+}
+
+.sign-up-2 {
+  margin-top: 40px;
+  height: 520px;
+  width: 370px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+}
+
+.sign-head-1 {
+  font-size: x-large;
+  font-weight: bold;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  padding: 10px;
+  margin: 15px;
+  border: none;
+  background-color: rgb(39, 39, 39);
+  color: rgb(253, 253, 253);
+  border: 2px solid rgb(129, 129, 129);
+  border-radius: 3px;
+}
+.hr-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+}
+.hr-2 p {
+  text-align: center;
+}
+.form .btn-8 {
+  background-color: rgb(224, 3, 3);
+  border: none;
+  cursor: pointer;
+}
+.btn-9 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.btn-9 .Facebook {
+  background-color: #3b5998;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: rgb(253, 253, 253);
+}
+.btn-9 .Google {
+  background-color: #b22209;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: rgb(253, 253, 253);
+}
+.btn-9 .Twitter {
+  background-color: #1da1f2;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: rgb(253, 253, 253);
+}
+.sign-up-2 .home {
+  
+  display: flex;
+  position: relative;
+  left: 30px;
+  bottom: 12px;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: #aaa9a9;
+}
+.sign-up-2 a {
+text-decoration: none;
+}
