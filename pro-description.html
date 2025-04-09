@@ -9,9 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -20,62 +21,41 @@
       <div class="logo">Tech‑Shop</div>
       <div class="nav-icon">
         <!-- Wrap both icon and hidden text in .jaiho -->
-        <div class="jaiho">
+        <div class="drop-down">
           <i class="fa-solid fa-magnifying-glass" style="color: rgb(167, 166, 166)"></i>
           <!-- This will be hidden until hover -->
           <div class="searchText">
-            <button style="
-                  background: rgb(45, 45, 45);
-                  color: azure;
-                  padding: 10px 20px;
-                  border: none;
-                ">
-              Search
-            </button>
+            <button class="btn-1">Search</button>
           </div>
         </div>
 
-        <div class="jaiho">
-          <i class="fa-solid fa-cart-shopping" style="color: rgb(167, 166, 166)"></i>
+        <div class="drop-down">
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping" style="color: rgb(167, 166, 166)"></i></a>
           <div class="searchText">
-            <button style="
-                  background: rgb(45, 45, 45);
-                  color: azure;
-                  padding: 10px 20px;
-                  border: none;
-                ">
-              Cart
-            </button>
+            <button class="btn-1">Cart</button>
           </div>
         </div>
 
-        <div class="jaiho">
+        <div class="drop-down">
           <i class="fa-solid fa-user" style="color: rgb(167, 166, 166)"></i>
           <div class="searchText-1">
             <div class="login">
               <p>Hello!</p>
               <p>Access account and manage orders</p>
-              <button style="
-                    background: rgb(98, 98, 98);
-                    color: azure;
-                    padding: 10px 20px;
-                    border: none;
-                    margin: 0 3px 5px 3px;
-                    font-weight: bold;
-                  ">
-                Login/SignUp
-              </button>
-              <hr />
+              <a href="./signup.html"><button class="btn-2">Login/SignUp</button></a>
+              <hr>
               <p>Please Login</p>
+
             </div>
           </div>
         </div>
+
       </div>
     </nav>
 
     <section class="pro-description">
       <div class="side-img">
-        <img src="./products/jbl660nc-1.png" alt="">
+        <img src="./products/jbl660nc-1.png" class="side-img-1" alt="">
         <img src="./products/jbl660nc-2.png" alt="">
         <img src="./products/jbl660nc-3.png" alt="">
         <img src="./products/jbl660nc-4.png" alt="">
@@ -84,33 +64,60 @@
         <img src="./products/jbl660nc-1.png" alt="">
       </div>
       <div class="third">
-        <p>JBL LIVE 660 NC</p>
-        <p style="font-family: sans-serif;">Wireless Over-Ear NC Headphones</p>
-        <p style="color: red;">&#9733 &#9733 &#9733 &#9733 &#9733 <span style="color: rgb(165, 165, 165);">| 12345
-            Ratings</span></p>
+        <p class="third-1">JBL LIVE 660 NC</p>
+        <p class="third-2">Wireless Over-Ear NC Headphones</p>
+        <p class="third-3">&#9733 &#9733 &#9733 &#9733 &#9733 <span>| 12345 Ratings</span></p>
         <hr>
-        <div>
-          <div>
-            <div>
-              <p style="font-size:xxx-large ;">₹9,999 <span
-                  style="text-decoration: line-through; opacity: 0.6; font-size: large;">₹14,999</span></p>
+        <div class="third-4">
+          <div >
+            <div class="third-price">
+              <p>₹9,999 </p>
+              <p class="line-through">₹14,999</p>
             </div>
-            <p>you save ₹5,000(33%)</p>
-            <p>(Inclusive of all taxes)</p>
+            <div class="third-5">
+              <p class="green">you save ₹5,000(33%)</p>
+              <p>(Inclusive of all taxes)</p>
+            </div>
           </div>
-          <button>In Stock</button>
+          <button class="btn-5"> ✓ In Stock</button>
         </div>
         <hr>
         <div>
-          <p>Offers and Discounts</p>
-          <div>
-            <button>No Cost EMI On Credit Card</button>
-            <button>Pay Later & Avail Cashback</button>
+          <p class="third-6">Offers and Discounts</p>
+          <div class="third-7">
+            <button class="btn-6">No Cost EMI On Credit <br> Card</button>
+            <button class="btn-6">Pay Later & Avail <br>Cashback</button>
           </div>
         </div>
         <hr>
-        <button>Add to cart</button>
+        <button class="btn-7">Add to cart</button>
 
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <p>Specification</p>
+        <p>Overview</p>
+        <p>Review</p>
+      </div>
+      <div class="spec">
+        <ul>
+          <li>Brand</li>
+          <li>Model</li>
+          <li>Generic Name</li>
+          <li>Headphone Type</li>
+          <li>Connectivity</li>
+          <li>Microphone</li>
+        </ul>
+        <ul>
+          <li>JBL</li>
+          <li>JBL Live 660NC</li>
+          <li>Headphones</li>
+          <li>Over Ear</li>
+          <li>Wireless</li>
+          <li>Yes</li>
+        </ul>
       </div>
     </section>
 
@@ -180,6 +187,53 @@
 
       </div>
 
+      <section class="advantages">
+        <h2>Our Advantages</h2>
+
+        <div class="adv-container">
+
+          <div class="adv-section">
+            <div class="adv-icon">
+              <i class="fa-solid fa-truck fa-2xl" style="color: rgb(255, 6, 6)"></i>
+            </div>
+            <div>
+              <p class="footer-font">Express Delivery</p>
+              <p class="footer-font-1">Ship in 24 Hours</p>
+            </div>
+          </div>
+
+          <div class="adv-section">
+            <div class="adv-icon">
+              <i class="fa-solid fa-shield-halved fa-2xl" style="color: #ff0000;"></i>
+            </div>
+            <div>
+              <p class="footer-font">Brand Warranty</p>
+              <p class="footer-font-1">100% Original Products</p>
+            </div>
+          </div>
+
+          <div class="adv-section">
+            <div class="adv-icon">
+              <i class="fa-solid fa-tags fa-2xl" style="color: #ff0000;"></i>
+            </div>
+            <div>
+              <p class="footer-font">Exciting Deals</p>
+              <p class="footer-font-1">On All Prepaid Orders</p>
+            </div>
+          </div>
+
+          <div class="adv-section">
+            <div class="adv-icon">
+              <i class="fa-solid fa-credit-card fa-2xl" style="color: #ff0000;"></i>
+            </div>
+            <div>
+              <p class="footer-font">Secure Payments</p>
+              <p class="footer-font-1">SSl/Secure certificate</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer class="footer">
         <div>
           <ul>
@@ -191,7 +245,7 @@
             <form action="#" method="POST">
               <input type="email" id="email" name="email" placeholder="Email Address*" class="email" required><br><br>
               <!-- <button type="submit" ></button> -->
-              <input type="submit" class="btn-3" value="Subscribe">
+              <input type="submit" class="btn-4" value="Subscribe">
             </form>
 
           </ul>
@@ -235,7 +289,7 @@
         <hr style="padding: 0; margin: 0; opacity: 0.6;">
         <div class="info">
           <div class="text">
-            2024 |All Rights Reserved. BUILT BY | UJJWAL ANAND
+            2025 |All Rights Reserved. BUILT BY | UJJWAL ANAND
           </div>
           <div class="info-icon">
             <i class="fa-brands fa-facebook-f" style="color: rgb(167, 166, 166)"></i>
@@ -248,7 +302,6 @@
 
 
   </div>
-
 </body>
 
 </html>

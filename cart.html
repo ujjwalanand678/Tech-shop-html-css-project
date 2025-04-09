@@ -1,66 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech-Shop</title>
+    <link rel="stylesheet" href="./cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tech-Shop</title>
-  <link rel="stylesheet" href="./cart.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <nav class="nav">
-    <div class="logo">Tech‑Shop</div>
-    <div class="nav-icon">
-      <!-- Wrap both icon and hidden text in .jaiho -->
-      <div class="drop-down">
-        <i class="fa-solid fa-magnifying-glass" style="color: rgb(167, 166, 166)"></i>
-        <!-- This will be hidden until hover -->
-        <div class="searchText">
-          <button class="btn-1">Search</button>
-        </div>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <a href="./index.html" class="logo-1">Tech‑Shop</a>
       </div>
-
-      <div class="drop-down">
-        <a href="./cart.html"><i class="fa-solid fa-cart-shopping" style="color: rgb(167, 166, 166)"></i></a>
-        <div class="searchText">
-          <button class="btn-1">Cart</button>
+      <div class="nav-icon">
+        <!-- Wrap both icon and hidden text in .jaiho -->
+        <div class="drop-down">
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style="color: rgb(167, 166, 166)"
+          ></i>
+          <!-- This will be hidden until hover -->
+          <div class="searchText">
+            <button class="btn-1">Search</button>
+          </div>
         </div>
-      </div>
 
-      <div class="drop-down">
-        <i class="fa-solid fa-user" style="color: rgb(167, 166, 166)"></i>
-        <div class="searchText-1">
-          <div class="login">
-            <p>Hello!</p>
-            <p>Access account and manage orders</p>
-            <a href="./signup.html"><button class="btn-2">Login/SignUp</button></a>
-            <hr>
-            <p>Please Login</p>
+        <div class="drop-down">
+          <a href="./cart.html"
+            ><i
+              class="fa-solid fa-cart-shopping"
+              style="color: rgb(167, 166, 166)"
+            ></i
+          ></a>
+          <div class="searchText">
+            <button class="btn-1">Cart</button>
+          </div>
+        </div>
 
+        <div class="drop-down">
+          <i class="fa-solid fa-user" style="color: rgb(167, 166, 166)"></i>
+          <div class="searchText-1">
+            <div class="login">
+              <p>Hello!</p>
+              <p>Access account and manage orders</p>
+              <a href="./signup.html"><button class="btn-2">Login/SignUp</button></a>
+              <hr />
+              <p>Please Login</p>
+            </div>
           </div>
         </div>
       </div>
+    </nav>
 
-    </div>
-  </nav>
+    <section class="cart">
+      <div class="cart-list">
+        <div class="cart-pro">
+          <img src="./products/jbl660nc-1.png" alt="" />
+          <div>
+            <p>JBL Live 660NC Wireless Over-Ear NC Headphones</p>
+            <div class="cart-price">
+              <p>₹9,999</p>
+              <p class="line-through">₹14,999</p>
+            </div>
+            <div class="number-spinner">
+              <button type="button" class="minus">-</button>
+              <input type="number" class="spinner-input" step="1" value="1" min="0"/>
+              <button type="button" class="plus">+</button>
+            </div>
+          </div>
+          <i class="fa-solid fa-trash delete"  style="color: rgb(167, 166, 166)"></i>
+        </div>
 
+        <hr class="hr-1" />
 
+        <div class="cart-pro">
+          <img src="./products/boat518-1.png" alt="" />
+          <div>
+            <p>boAt Rockerz 518 On-Ear Wireless Headphones</p>
+            <div class="cart-price">
+              <p>₹1,299</p>
+              <p class="line-through">₹3,990</p>
+            </div>
+            <div class="number-spinner">
+              <button type="button" class="minus">-</button>
+              <input type="number" class="spinner-input" value="1" min="0" />
+              <button type="button" class="plus">+</button>
+            </div>
+          </div>
+          <i class="fa-solid fa-trash delete"  style="color: rgb(167, 166, 166)"></i>
+        </div>
 
+        <hr class="hr-1" />
 
+        <div class="cart-pro">
+          <img src="./products/boat131-1.png" alt="" />
+          <div>
+            <p>boAt Airdopes 131 Wireless In-Ear Earbuds</p>
+            <div class="cart-price">
+              <p>₹1,099</p>
+              <p class="line-through">₹2,990</p>
+            </div>
+            <div class="number-spinner">
+              <button type="button" class="minus">-</button>
+              <input type="number" class="spinner-input" value="1" min="0" />
+              <button type="button" class="plus">+</button>
+            </div>
+          </div>
+          <i class="fa-solid fa-trash delete"   style="color: rgb(167, 166, 166)"></i>
+        </div>
 
+        <hr class="hr-1" />
 
+        <div class="cart-pro">
+          <img src="./products/boat110-1.png" alt="" />
+          <div>
+            <p>boAt BassHeads 110 In-Ear Wired Earphones</p>
+            <div class="cart-price">
+              <p>₹449</p>
+              <p class="line-through">₹999</p>
+            </div>
+            <div class="number-spinner">
+              <button type="button" class="minus">-</button>
+              <input type="number" class="spinner-input" value="1" min="0" />
+              <button type="button" class="plus">+</button>
+            </div>
+          </div>
+          <i class="fa-solid fa-trash delete"   style="color: rgb(167, 166, 166)"></i>
+        </div>
+      </div>
 
+      <div class="order-summary">
+        <p class="order-head">Order Summary (4 items)</p>
+        <div class="order-price">
+          <p>Orignal Price</p>
+          <p class="order-price-1">₹22,978</p>
+        </div>
+        <div class="order-price">
+          <p>Discount</p>
+          <p class="order-price-2">₹-10,132</p>
+        </div>
+        <div class="order-price">
+          <p>Delivery</p>
+          <p class="order-price-2">Free</p>
+        </div>
 
+        <hr class="hr-2" />
+        <div class="order-price-3">
+          <p>Total Price</p>
+          <p>₹12,846</p>
+        </div>
 
+        <button class="btn-5">Checkout</button>
+      </div>
+    </section>
 
-  <footer class="footer">
+     <footer class="footer">
     <div>
       <ul>
         <p class="footer-font">Tech-Shop</p>
@@ -68,12 +173,12 @@
           early discount offers, and new products <br>
           info.
         </p>
-        <form action="#" method="POST">
+        <form action="#" method="POST" >
           <input type="email" id="email" name="email" placeholder="Email Address*" class="email" required><br><br>
-          
-          <input type="submit" class="btn-3" value="Subscribe">
+        <!-- <button type="submit" ></button> -->
+        <input type="submit" class="btn-4" value="Subscribe">
         </form>
-
+        
       </ul>
     </div>
 
@@ -115,7 +220,7 @@
     <hr style="padding: 0; margin: 0; opacity: 0.6;">
     <div class="info">
       <div class="text">
-        2024 |All Rights Reserved. BUILT BY | UJJWAL ANAND
+        2025 |All Rights Reserved. BUILT BY | UJJWAL ANAND
       </div>
       <div class="info-icon">
         <i class="fa-brands fa-facebook-f" style="color: rgb(167, 166, 166)"></i>
@@ -127,7 +232,7 @@
   </div>
 
 
-
+  </div>
 </body>
 
 </html>

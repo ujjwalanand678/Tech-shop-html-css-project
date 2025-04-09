@@ -3,7 +3,7 @@ html {
   background-color: rgb(20, 20, 20);
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 body {
   overflow-x: hidden;
@@ -43,8 +43,6 @@ body {
   cursor: pointer;
   border: none;
   border: 1px solid rgb(209, 208, 208);
-  
-  
 }
 
 .logo {
@@ -52,6 +50,10 @@ body {
   font-size: larger;
   position: relative;
   top: -6px;
+}
+.logo-1 {
+  text-decoration: none;
+  color: rgb(167, 166, 166);
 }
 
 .nav-icon {
@@ -80,8 +82,6 @@ body {
   transform: translateX(-50%);
   white-space: nowrap;
   border: none;
-  
-  
 }
 
 /* show on hover */
@@ -114,7 +114,6 @@ body {
   border: none;
   border: 1px solid white;
   border-radius: 3px;
-  
 }
 .drop-down {
   height: 40px;
@@ -127,6 +126,19 @@ body {
   grid-template-columns: 2fr 1fr 1fr 1fr;
   background-color: black;
   height: 400px;
+  
+}
+.btn-4 {
+  background-color: rgb(233, 0, 0);
+  border: none;
+  padding: 10px 33px;
+  color: azure;
+  border-radius: 3px;
+  position: relative;
+  font-size: medium;
+  left: 1px;
+  top: 13px;
+  cursor: pointer;
 }
 .email {
   height: 40px;
@@ -141,10 +153,13 @@ body {
   position: relative;
   top: 5px;
 }
-
+.footer-font-1{
+  position: relative;
+  top: -12px;
+}
 .footer-font {
-  font-family: "Lilita One", sans-serif;
   font-size: large;
+  font-weight: bold;
 }
 .footer ul {
   list-style: none;
@@ -157,8 +172,7 @@ body {
 
 .footer-info {
   background-color: black;
-  margin: 0;
-  padding: 0;
+  
 }
 .info {
   display: flex;
@@ -173,4 +187,146 @@ body {
 }
 .footer-info .text {
   flex: 10;
+}
+
+/* cart product list */
+
+.cart {
+  display: flex;
+  padding-top: 35px;
+  color: rgb(188, 188, 188);
+}
+.cart-pro img {
+  height: 150px;
+}
+
+.cart-pro {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  font-weight: 500;
+}
+.cart-price {
+  display: flex;
+  font-weight: bold;
+  gap: 20px;
+  font-size: large;
+}
+.line-through {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.cart-list {
+  flex: 8;
+  overflow-y: scroll;
+  width: 80%;
+  height: 500px;
+  background-color: rgb(24 24 27);
+  margin-left: 20px;
+  margin-bottom: 80px;
+}
+
+.cart-list::-webkit-scrollbar {
+  background-color: rgb(57, 57, 57);
+}
+.cart-list::-webkit-scrollbar-thumb {
+  background-color: rgb(103, 103, 103);
+}
+.hr-1 {
+  display: flex;
+  width: 85%;
+  opacity: 0.5;
+}
+
+.hr-2 {
+  display: flex;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.number-spinner {
+  border: 1px solid rgb(152, 152, 152);
+  display: flex;
+  width: 40%;
+  border-radius: 2px;
+  height: 30px;
+}
+.number-spinner .spinner-input {
+  background-color: rgb(23, 23, 23);
+  width: 50%;
+  border: none;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.number-spinner .spinner-input::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.number-spinner .minus {
+  background-color: rgb(37 37 37);
+  border: none;
+  width: 35%;
+  color: #bcbcbc;
+  font-size: x-large;
+  font-weight: bold;
+}
+.number-spinner .plus {
+  background-color: rgb(37 37 37);
+  border: none;
+  width: 35%;
+  color: #bcbcbc;
+  font-size: large;
+  font-weight: bold;
+}
+.cart-pro .delete{
+  position: relative;
+  bottom: 54px;
+  cursor: pointer;
+}
+
+/* order summary styles */
+.order-summary {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px 0 30px;
+  padding-left: 50px;
+}
+.order-summary .order-price {
+  display: flex;
+  justify-content: space-between;
+}
+.order-head {
+  font-weight: bold;
+  font-size: 22px;
+  position: relative;
+  top: -22px;
+}
+.order-price-1 {
+  font-weight: bold;
+}
+.order-price-2 {
+  font-weight: bold;
+  color: green;
+}
+.order-price-3 {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 22px;
+}
+.btn-5 {
+  border: none;
+  background-color: rgb(244, 3, 3);
+  padding: 10px 0;
+  color: #fffefe;
+  border-radius: 3px;
+  font-size: large;
+  cursor: pointer;
 }
