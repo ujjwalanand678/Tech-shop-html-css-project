@@ -206,7 +206,7 @@ body {
 .buy-sec {
   flex: 60%;
   position: relative;
-  top: 161px;
+  top: 165px;
   left: -349px;
   font-size: 42px;
 
@@ -278,17 +278,15 @@ body {
   z-index: -5;
   top: 101px;
   opacity: 0.1;
-
   font-weight: bold;
 }
 
 .banner-2 .buy-sec {
   flex: 60%;
   position: relative;
-  top: 213px;
-  left: -590px;
+  top: 165px;
+  left: -620px;
   font-size: 42px;
-
   font-weight: bolder;
   font-style: normal;
 }
@@ -336,10 +334,9 @@ body {
 .banner-3 .buy-sec {
   flex: 60%;
   position: relative;
-  top: 213px;
-  left: -590px;
+  top: 165px;
+  left: -620px;
   font-size: 42px;
-
   font-weight: bolder;
   font-style: normal;
 }
