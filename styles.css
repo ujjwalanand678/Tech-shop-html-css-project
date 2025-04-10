@@ -930,9 +930,9 @@ body {
     padding-bottom: 50px;
   }
   .banner-1 .bg-text {
-    font-size: 62px;
+    font-size: 60px;
     top: 0;
-    left: 40px;
+    left: 50px;
   }
 
   .banner-2 .bg-text {
@@ -957,7 +957,7 @@ body {
   .banner-1 .buy-sec {
     position: relative;
     top: 47px;
-    left: -189px;
+    left: -176px;
     font-size: 14px;
   }
   .banner-2 .buy-sec {
@@ -976,7 +976,7 @@ body {
     position: relative;
     top: 52px;
     height: 165px;
-    right: 170px;
+    right: 160px;
   }
 
   .banner-2 img {
@@ -1010,7 +1010,7 @@ body {
 
   /* Featured products */
   .featured-product {
-    width: 65%;
+    width: 75%;
   }
   .featured-product h2 {
     color: rgb(167, 166, 166);
@@ -1067,14 +1067,15 @@ body {
     color: rgb(167, 166, 166);
     width: 90%;
     justify-items: center;
-}
+  }
   .top-container .head-list {
     font-size: 14px;
-    width: 90%;
+    width: 86%;
+    overflow: hidden;
   }
   .top-container h2 {
     font-size: x-large;
-    padding: 115px 0 40px 0;
+    padding: 150px 0 40px 0;
   }
   .top-product {
     display: grid;
@@ -1082,13 +1083,13 @@ body {
     position: relative;
   }
 
-      .top-heading {
-        font-size: 16px;
-        font-weight: bold;
-    }
+  .top-heading {
+    font-size: 15px;
+    font-weight: bold;
+  }
   .pro-prices {
     display: flex;
-    font-size: 16px;
+    font-size: 15px;
     gap: 15px;
     font-weight: bold;
   }
@@ -1110,9 +1111,10 @@ body {
   }
   .browse-all {
     position: relative;
-    top: 0;
-    right: -51px;
-    padding: 120px 0;
+    top: -5px;
+    font-size: large;
+    right: -60px;
+    padding: 100px 0;
   }
   .advantages h2 {
     position: relative;
