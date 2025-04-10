@@ -829,7 +829,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
-    
   }
 
   .top-heading {
@@ -895,113 +894,201 @@ body {
 }
 /* //////////////////////////////////////////////////////////////////////////////// */
 @media only screen and (max-width: 576px) {
+  .logo {
+    flex: 0;
+    font-size: larger;
+    position: relative;
+    top: -6px;
+  }
+  .nav {
+    font-size: large;
+  }
+  .nav-icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+  }
   .banner-1 {
     display: flex;
-    flex-direction: column;
     position: relative;
-    top: -158px;
+    top: -26px;
+    padding-bottom: 50px;
   }
 
-  .bg-text {
-    font-size: 39px;
-    top: 197px;
-    left: 79px;
-  }
-  .product-name {
+  .banner-2 {
+    display: flex;
     position: relative;
-    top: -50px;
-    font-size: 9px;
-    font-weight: bold;
+    top: 0;
+    padding-bottom: 50px;
   }
-
-  .buy-sec {
+  .banner-3 {
+    display: flex;
     position: relative;
-    top: 99px;
-    left: -146px;
-    font-size: 8px;
+    top: 0;
+    padding-bottom: 50px;
   }
-
-  .banner-1 img {
-    position: relative;
-    top: 180px;
-    height: 338px;
-    right: 153px;
-  }
-
-  .banner-2 .buy-sec {
-    position: relative;
-    top: 195px;
-    left: -448px;
-    font-size: 22px;
-  }
-
-  .banner-2 img {
-    position: relative;
-    top: 215px;
-    height: 356px;
-    right: 463px;
+  .banner-1 .bg-text {
+    font-size: 62px;
+    top: 0;
+    left: 40px;
   }
 
   .banner-2 .bg-text {
     position: relative;
-    left: -106px;
-    width: 100%;
-    font-size: 102px;
-    top: 152px;
+    font-size: 52px;
+    top: 0;
+    left: 38px;
   }
-
-  .banner-2 {
-    left: 200px;
-    top: -166px;
-  }
-
   .banner-3 .bg-text {
     position: relative;
-    left: -106px;
-    width: 100%;
-    font-size: 102px;
-    top: 152px;
+    font-size: 52px;
+    top: 0;
+    left: 38px;
+  }
+  .product-name {
+    position: relative;
+    top: 0px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .banner-1 .buy-sec {
+    position: relative;
+    top: 47px;
+    left: -189px;
+    font-size: 14px;
+  }
+  .banner-2 .buy-sec {
+    position: relative;
+    top: 42px;
+    left: -180px;
+    font-size: 14px;
+  }
+  .banner-3 .buy-sec {
+    position: relative;
+    top: 42px;
+    left: -180px;
+    font-size: 14px;
+  }
+  .banner-1 img {
+    position: relative;
+    top: 52px;
+    height: 165px;
+    right: 170px;
+  }
+
+  .banner-2 img {
+    position: relative;
+    top: 35px;
+    height: 164px;
+    right: 160px;
   }
 
   .banner-3 img {
     position: relative;
-    top: 215px;
-    height: 318px;
-    right: 463px;
+    top: 35px;
+    height: 164px;
+    right: 160px;
   }
-
-  .banner-3 {
-    left: 200px;
-    top: -166px;
+  .price {
+    font-size: 14px;
   }
-
-  .banner-3 .buy-sec {
+  .btn-3 {
+    background-color: rgb(233, 0, 0);
+    border: none;
+    padding: 5px 12px;
+    color: azure;
+    border-radius: 5px;
     position: relative;
-    top: 195px;
-    left: -448px;
-    font-size: 22px;
+    font-size: small;
+    left: 0px;
+    top: -19px;
+    cursor: pointer;
+  }
+
+  /* Featured products */
+  .featured-product {
+    width: 65%;
+  }
+  .featured-product h2 {
+    color: rgb(167, 166, 166);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 40px 0 25px 0;
+    padding: 16px;
+  }
+  .featured-product div {
+    display: flex;
+    flex-direction: column;
+  }
+  .pro-1 .pro-price-1,
+  .pro-2 .pro-price-2,
+  .pro-3 .pro-price-3,
+  .pro-4 .pro-price-4,
+  .pro-5 .pro-price-5 {
+    justify-content: center;
+    font-size: small;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pro-1 img,
+  .pro-2 img,
+  .pro-3 img,
+  .pro-4 img,
+  .pro-5 img {
+    height: 100px;
+    padding: 8px 0;
+  }
+  .heading-1,
+  .heading-2,
+  .heading-3,
+  .heading-4,
+  .heading-5 {
+    text-align: center;
+    font-size: small;
+    opacity: 1;
+    font-weight: normal;
+  }
+  #radio-1 {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 0 0;
+    accent-color: red;
+    flex-direction: row;
   }
 
   /* Top container css */
+  .top-container {
+    color: rgb(167, 166, 166);
+    width: 90%;
+    justify-items: center;
+}
   .top-container .head-list {
-    font-size: 18px;
-    width: 78%;
+    font-size: 14px;
+    width: 90%;
   }
-
+  .top-container h2 {
+    font-size: x-large;
+    padding: 115px 0 40px 0;
+  }
   .top-product {
     display: grid;
     grid-template-columns: 1fr;
     position: relative;
-    left: 130px;
   }
 
-  .top-heading {
-    font-size: 18px;
-    font-weight: bold;
-  }
+      .top-heading {
+        font-size: 16px;
+        font-weight: bold;
+    }
   .pro-prices {
     display: flex;
-    font-size: 18px;
+    font-size: 16px;
     gap: 15px;
     font-weight: bold;
   }
@@ -1023,13 +1110,14 @@ body {
   }
   .browse-all {
     position: relative;
-    top: 144px;
-    right: -52px;
+    top: 0;
+    right: -51px;
+    padding: 120px 0;
   }
-
   .advantages h2 {
     position: relative;
-    left: 125px;
+    left: 0px;
+    font-size: x-large;
   }
   .advantages .adv-container {
     justify-content: flex-start;
@@ -1039,18 +1127,13 @@ body {
     display: flex;
     padding: 0 26px;
   }
-  .footer {
-    display: flex;
-    width: 155%;
-    flex-direction: column;
-    height: 100%;
-  }
+
   .footer-info {
-    width: 152%;
+    width: 100%;
   }
   .footer {
     display: flex;
-    width: 155%;
+    width: 100%;
     flex-direction: column;
     height: 100%;
     padding-bottom: 38px;
