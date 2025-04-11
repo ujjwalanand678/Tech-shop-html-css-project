@@ -35,8 +35,8 @@ body {
   border-radius: 3px;
 }
 .btn-2 {
-  background: rgb(98, 98, 98);
-  color: rgb(160, 160, 160);
+  background-color: rgb(39 39 39);
+  color: rgb(187, 187, 187);
   padding: 10px 20px;
   margin: 0 3px 5px 3px;
   font-weight: bold;
@@ -77,7 +77,7 @@ body {
   opacity: 0;
   transition: transform 0.25s ease-out, opacity 0.2s ease-out;
   position: absolute;
-  top: 40px; /* drop down */
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
@@ -91,7 +91,7 @@ body {
   pointer-events: auto;
 }
 .login {
-  background-color: rgb(45, 45, 45);
+  background-color: rgb(39 39 39);
   padding: 12px;
   font-size: small;
   color: rgb(205, 205, 205);
@@ -126,7 +126,6 @@ body {
   grid-template-columns: 2fr 1fr 1fr 1fr;
   background-color: black;
   height: 400px;
-  
 }
 .btn-4 {
   background-color: rgb(233, 0, 0);
@@ -153,7 +152,7 @@ body {
   position: relative;
   top: 5px;
 }
-.footer-font-1{
+.footer-font-1 {
   position: relative;
   top: -12px;
 }
@@ -172,7 +171,6 @@ body {
 
 .footer-info {
   background-color: black;
-  
 }
 .info {
   display: flex;
@@ -284,7 +282,7 @@ body {
   font-size: large;
   font-weight: bold;
 }
-.cart-pro .delete{
+.cart-pro .delete {
   position: relative;
   bottom: 54px;
   cursor: pointer;
@@ -329,4 +327,65 @@ body {
   border-radius: 3px;
   font-size: large;
   cursor: pointer;
+}
+
+/* /////////////////////////////////////////////////////////// */
+
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+  .cart-pro {
+    padding: 20px;
+  }
+  .cart-pro img {
+    height: 125px;
+  }
+  .cart-price {
+    display: flex;
+    font-weight: bold;
+    gap: 20px;
+    font-size: 15px;
+  }
+  .order-summary {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin: 0 28px 0 25px;
+    padding-left: 15px;
+  }
+  .order-head {
+    font-weight: bold;
+  }
+  .order-price-3 {
+    font-size: 17px;
+  }
+}
+
+/* //////////////////////////////////////////// */
+@media only screen and (max-width: 576px) {
+  .cart {
+    display: flex;
+    padding-top: 35px;
+    flex-direction: column;
+  }
+  .cart-list {
+    flex: 8;
+    overflow-y: scroll;
+    width: 100%;
+  }
+  .order-summary {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 50px;
+  }
+  .footer-info {
+    width: 100%;
+  }
+  .footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 38px;
+  }
 }

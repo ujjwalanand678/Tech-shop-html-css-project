@@ -77,7 +77,6 @@ body {
   transition: transform 0.25s ease-out, opacity 0.2s ease-out;
   position: absolute;
   top: 40px;
-  /* drop down */
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
@@ -562,6 +561,8 @@ body {
   border: 1px solid gray;
   margin: 5px;
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
 }
 
 .top-heading {
@@ -908,7 +909,7 @@ body {
     gap: 20px;
     align-items: center;
     flex: 1;
-    justify-content: center;
+    justify-content: flex-end;
   }
   .banner-1 {
     display: flex;
@@ -957,7 +958,7 @@ body {
   .banner-1 .buy-sec {
     position: relative;
     top: 47px;
-    left: -176px;
+    left: -116px;
     font-size: 14px;
   }
   .banner-2 .buy-sec {
@@ -976,7 +977,7 @@ body {
     position: relative;
     top: 52px;
     height: 165px;
-    right: 160px;
+    right: 106px;
   }
 
   .banner-2 img {

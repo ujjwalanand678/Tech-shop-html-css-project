@@ -34,8 +34,8 @@ body {
   border-radius: 3px;
 }
 .btn-2 {
-  background: rgb(98, 98, 98);
-  color: rgb(160, 160, 160);
+  background-color: rgb(39 39 39);
+  color: rgb(187, 187, 187);
   padding: 10px 20px;
   margin: 0 3px 5px 3px;
   font-weight: bold;
@@ -49,6 +49,10 @@ body {
   font-size: larger;
   position: relative;
   top: -6px;
+}
+.logo-1 {
+  text-decoration: none;
+  color: rgb(167, 166, 166);
 }
 
 .nav-icon {
@@ -86,7 +90,7 @@ body {
   pointer-events: auto;
 }
 .login {
-  background-color: rgb(45, 45, 45);
+  background-color: rgb(39 39 39);
   padding: 12px;
   font-size: small;
   color: rgb(205, 205, 205);
@@ -239,20 +243,18 @@ body {
 }
 .spec-2 ul {
   list-style: none;
-  
 }
-.spec-2 ul li{
+.spec-2 ul li {
   list-style: none;
   margin-top: 30px;
-  
 }
-.spec-3{
-margin-right: 223px;
-font-weight: 500;
+.spec-3 {
+  margin-right: 223px;
+  font-weight: 500;
 }
-.spec-4{
+.spec-4 {
   font-weight: bold;
-      justify-items: end;
+  justify-items: end;
 }
 .head-list-1 {
   position: relative;
@@ -314,7 +316,7 @@ font-weight: 500;
 }
 
 .product-list img {
-  height: 179px;
+  height: 189px;
   display: flex;
   padding: 15px 59px;
   background-color: rgb(29, 29, 29);
@@ -325,7 +327,10 @@ font-weight: 500;
   border: 1px solid gray;
   margin: 5px;
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
 }
+
 .top-heading {
   font-size: 20px;
   font-weight: bold;
@@ -463,4 +468,219 @@ font-weight: 500;
 }
 .footer-info .text {
   flex: 10;
+}
+
+/* //////////////////////////////////////////////////// */
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+  .side-img {
+    display: flex;
+  }
+  .pro-description {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pro-description .main-img img {
+    flex: 6;
+    position: relative;
+    height: 484px;
+    top: 21px;
+    left: 120px;
+  }
+  .spec-2 {
+    display: flex;
+    justify-content: center;
+  }
+  .top-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+  .top-container {
+    color: rgb(167, 166, 166);
+    width: 100%;
+    justify-items: center;
+  }
+  .top-heading {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .pro-prices {
+    display: flex;
+    font-size: 18px;
+    gap: 15px;
+    font-weight: bold;
+  }
+  .top-btn {
+    background-color: rgb(248, 2, 2);
+    border: none;
+    color: azure;
+    margin: 0 10px 15px 10px;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 6px 73px;
+  }
+  .product-list img {
+    height: 188px;
+  }
+  .product-list {
+    display: flex;
+    border: 1px solid gray;
+    margin: 5px;
+    border-radius: 3px;
+    flex-direction: column;
+  }
+
+  .advantages h2 {
+    position: relative;
+    left: 0px;
+  }
+  .advantages .adv-container {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .advantages .adv-section {
+    display: flex;
+    padding: 0 26px;
+  }
+  .footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer-info {
+    width: 100%;
+  }
+  .footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 38px;
+  }
+}
+/* //////////////////////////////////////////////////////////////////////////////// */
+@media only screen and (max-width: 576px) {
+  .side-img {
+    display: flex;
+  }
+  .pro-description {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pro-description .side-img img {
+    flex: 2;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(71, 71, 71);
+    margin: 5px;
+    padding: 5px;
+  }
+  .pro-description .side-img .side-img-1 {
+    margin: 5px;
+    padding: 5px;
+  }
+  .pro-description .main-img img {
+    flex: 6;
+    position: relative;
+    height: 400px;
+    top: 21px;
+  }
+  .btn-6 {
+    font-size: 16px;
+  }
+
+  /* Top container css */
+  .top-container {
+    color: rgb(167, 166, 166);
+    width: 100%;
+    justify-items: center;
+  }
+  .head-list-1 {
+    gap: 30px;
+    font-size: 20px;
+    padding: 8px 20px;
+  }
+  .top-container h2 {
+    font-size: 20px;
+    padding: 150px 0 40px 0;
+  }
+  .top-product {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .top-heading {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .pro-prices {
+    display: flex;
+    font-size: 23px;
+    gap: 15px;
+    font-weight: bold;
+  }
+  .top-btn {
+    background-color: rgb(248, 2, 2);
+    border: none;
+    color: azure;
+    margin: 0 10px 15px 10px;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 6px 73px;
+  }
+  .product-list img {
+    height: 188px;
+  }
+  .product-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .advantages h2 {
+    position: relative;
+    left: 0px;
+    font-size: x-large;
+  }
+  .advantages .adv-container {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .advantages .adv-section {
+    display: flex;
+    padding: 0 26px;
+  }
+
+  .footer-info {
+    width: 100%;
+  }
+  .footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 38px;
+  }
+  .spec-3 {
+    margin-right: 140px;
+    font-weight: 500;
+  }
+  .head-list-1 {
+    gap: 30px;
+    font-size: 15px;
+    padding: 8px 20px;
+  }
+  .btn-7 {
+    width: 100%;
+  }
+  .third-1 {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .third-price {
+    font-size: 24px;
+  }
 }
